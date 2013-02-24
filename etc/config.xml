@@ -60,10 +60,16 @@
     <scripting script-charset="UTF-8">
       <common-script>/usr/share/mediatomb/js/common.js</common-script>
       <playlist-script>/usr/share/mediatomb/js/playlists.js</playlist-script>
+
       <virtual-layout type="builtin">
         <import-script>/usr/share/mediatomb/js/import.js</import-script>
         <dvd-script>/usr/share/mediatomb/js/import-dvd.js</dvd-script>
       </virtual-layout>
+<!--      
+      <virtual-layout type="js">
+        <import-script>/usr/local/mediatomb/import.js</import-script>
+      </virtual-layout>
+-->
     </scripting>
     <autoscan use-inotify="auto">
       <directory location="/home/ftp" mode="inotify" recursive="yes" hidden-files="no"/>
